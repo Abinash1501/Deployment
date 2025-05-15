@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open('model_pickle', 'rb'))
+model = joblib.load('xgboost_gold_model.joblib')
 
 st.title('Titanic Survival Prediction')
 
