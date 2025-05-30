@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import os
 
 # Load model and data
-model = load_model('model/lstm_model.h5')
-df = pd.read_csv('data/Gold_data.csv')
+model = load_model("D:\Excelr\Deployment\Streamlit gold prediction\model\lstm_model.h5")
+df = pd.read_csv("D:\Excelr\Deployment\Streamlit gold prediction\data\Gold_data.csv")
 df['Date'] = pd.to_datetime(df['Date'])
 df.set_index('Date', inplace=True)
 df = df[['Price']].dropna()
